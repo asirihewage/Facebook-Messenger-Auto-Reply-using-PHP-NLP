@@ -1,7 +1,11 @@
-# Facebook-Messenger-Auto-Reply-using-PHP-NLP
+# Facebook Messenger Auto Reply using PHP - NLP
+This conversational bot will learn and answer , also it will search Wikipedia for you!
+Implement this app on your web server and setup automated conversations on your facebook page.
 
 # Configurations
-update config.php with your database and Facebook App configurations.
+- First, create an app on https://developer.facebook.com with messenger API and webhook API enabled.
+- Connect your app with your facebook page.
+- Then copy this repository into your PHP web server and update config.php with your database and Facebook App configurations.
 ```php
     'host' => '',
     'username' => '',
@@ -12,7 +16,10 @@ update config.php with your database and Facebook App configurations.
     'accessToken' => 'access token provided for the app',
     'admin_sender_ID' => 'To obtain the sender ID, send a message to the bot, then check the database for your sender ID'
 ```
-
+Run composer to install dependancies. (NLP Tools and other libraries)
+```
+composer install
+```
 
 # Functionality
 - The bot will recieve a message
